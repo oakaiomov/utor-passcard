@@ -149,6 +149,12 @@ export default {
 
     border-radius: 10px;
 
+    &.back {
+        background-color: black;
+        color: white;
+        font-family: 'os-regular';
+    }
+
     &.front {
         background-color: white;
         color: black;

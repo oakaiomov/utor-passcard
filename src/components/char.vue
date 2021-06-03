@@ -45,16 +45,19 @@ export default {
     justify-content: center;
 
     font-size: 18px;
+    &[lineColor="0"],&[lineColor="1"],&[lineColor="2"],&[lineColor="3"] {
+        color: black; font-family: 'os-extrabold';
+    }
 
     &.left { padding-left: 22px; }
     &.right { padding-right: 22px; }
     &.top { padding-top: 22px; }
     &.bottom { padding-bottom: 22px; }
 
-    &[lineColor="0"] { background-color: #ffff00; color: black; font-family: 'os-extrabold'; }
-    &[lineColor="1"] { background-color: #b9f900; color: black; font-family: 'os-extrabold'; }
-    &[lineColor="2"] { background-color: #00ebb7; color: black; font-family: 'os-extrabold'; }
-    &[lineColor="3"] { background-color: #00e3ff; color: black; font-family: 'os-extrabold'; }
+    &[lineColor="0"] { border-color: #ffff00 ; background-color: #ffff00; }
+    &[lineColor="1"] { border-color: #b9f900 ; background-color: #b9f900; }
+    &[lineColor="2"] { border-color: #00ebb7 ; background-color: #00ebb7; }
+    &[lineColor="3"] { border-color: #00e3ff ; background-color: #00e3ff; }
 
     &[lineBorder="l"] { border-radius: 10px 0px 0px 10px; }
     &[lineBorder="r"] { border-radius: 0px 10px 10px 0px; }

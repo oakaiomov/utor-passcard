@@ -2,6 +2,21 @@
 @font-face { font-family: 'os-light'; src: url(./assets/os_light.ttf) format("opentype"); }
 @font-face { font-family: 'os-extrabold'; src: url(./assets/os_extrabold.ttf) format("opentype"); }
 
+@media print {
+    @page {
+        size: auto;   /* auto is the initial value */
+        margin: 0;  /* this affects the margin in the printer settings */
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+    }
+
+    html, body {
+        background-color: white !important;
+    }
+}
+
 html, body {
     background-color: black;
     color: white;
