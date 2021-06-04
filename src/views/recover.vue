@@ -15,7 +15,7 @@
                 <p>Scan QR with device's camera to get it there.</p>
             </div>
         </div>
-        <div v-else-if="idStatus === 'good' && isMobile" class="action">Get Passcard</div>
+        <div v-else-if="idStatus === 'good' && isMobile" class="action" @click="handleClick">Get Passcard</div>
         <div v-else-if="idStatus === 'error'" class="error">Incorrect ID!</div>
         <div v-else class="empty">Type an ID</div>
     </div>
