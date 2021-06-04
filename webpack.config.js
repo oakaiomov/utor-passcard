@@ -23,7 +23,7 @@ export default [{ // Main application
             title: 'UTOR Passcard',
             filename: `${BUILD_PATH}/index.html`,
             meta: {viewport: 'width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no'},
-            templateContent: '<!DOCTYPE html><html><head><title></title></head><body><div id="application"></div></body></html>',
+            templateContent: '<!DOCTYPE html><html><head><link rel="shortcut icon" href="utor-passcard/favicon.ico"></head><body><div id="application"></div></body></html>',
             inject: 'head',
         }),
         new ScriptExtHtmlPlugin({inline: [/.(js|css)$/]}),
