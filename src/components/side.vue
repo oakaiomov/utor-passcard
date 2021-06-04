@@ -128,7 +128,7 @@ export default {
                 } else {
                     if(line > 13 - line2.length+1) { result[15 - line2.shift] = {"f":line2.color} }
                     else if(line === 13 - line2.length+1) { result[15 - line2.shift] = {"t":line2.color} }
-                    if(15 - line2.shift < 3 && line2.length > 2 && line === 11) { result[15 - line2.shift] = {"t":line2.color} }
+                    if(line2.shift > 3 && line2.length > 2 && line === 11) { result[15 - line2.shift] = {"t":line2.color} }
                 }
             }
 
