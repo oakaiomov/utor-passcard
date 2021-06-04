@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     const ID = generator.identifier(window.location.search.substr(1))
                     if(ID) {
                         const data = generator.cardData(ID);
-                        console.log(data)
+                        // console.log(data)
                         return createElement('card-view', {props: { cardData: data }})        
                     }
                 }

@@ -8,7 +8,7 @@ const BUNDLE_NAME = 'bundle.js'
 const BUILD_PATH = path.resolve(path.join(path.dirname(new URL(import.meta.url).pathname), 'build'))
 
 export default [{ // Main application
-    mode: 'development',
+    mode: 'production',
     entry: './src/main.js',
     output: { filename: BUNDLE_NAME, path: BUILD_PATH },
     resolve: { alias: { 'vue$': 'vue/dist/vue.esm.js'}, extensions: ['*', '.js', '.vue', '.json'] },
@@ -30,7 +30,7 @@ export default [{ // Main application
         new WebpackCleanPlugin(BUNDLE_NAME, {basePath: BUILD_PATH})
     ]
 }, { // service_worker for offline
-    mode: 'development',
+    mode: 'production',
     entry: './src/worker.js',
     output: { filename: 'worker.js', path: BUILD_PATH },
 }]
