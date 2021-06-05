@@ -1,8 +1,8 @@
 <template>
 <div class="recover">
-    <div class="header">Passcard Recovery</div>
+    <div class="header">PassCard Recovery</div>
     <div class="message">
-        <p>Please type your Passcard ID into the field to get it's online copy.</p>
+        <p>Please type your PassCard ID into the field to get it's online copy.</p>
         <p>You can save the url, page will be cached and you'll have an access to it even when you are offline.</p>
     </div>
     <input type="text" class="identifier" @change="handleID" :value="currentID"/>
@@ -11,11 +11,11 @@
         <div v-if="idStatus === 'good' && !isMobile" class="action">
             <div class = "qr-code" @click="handleClick"><qr-code :value="recoverUrl" :scale="5" :color="{dark: '#FFFFFF00', light: '#000000FF'}" :margin="1"/></div>
             <div class = "message">
-                <p>Click it to get your passcard here.</p>
+                <p>Click it to get your PassCard here.</p>
                 <p>Scan QR with device's camera to get it there.</p>
             </div>
         </div>
-        <div v-else-if="idStatus === 'good' && isMobile" class="action" @click="handleClick">Get Passcard</div>
+        <div v-else-if="idStatus === 'good' && isMobile" class="action" @click="handleClick">Get PassCard</div>
         <div v-else-if="idStatus === 'error'" class="error">Incorrect ID!</div>
         <div v-else class="empty">Type an ID</div>
     </div>

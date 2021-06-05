@@ -20,10 +20,10 @@ export default [{ // Main application
     plugins:[
         new VueLoaderPlugin(),
         new HtmlWebpackPlugin({
-            title: 'UTOR Passcard',
+            title: 'UTOR PassCard',
             filename: `${BUILD_PATH}/index.html`,
             meta: {viewport: 'width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no'},
-            templateContent: '<!DOCTYPE html><html><head><title>UTOR Passcard</title><link rel="shortcut icon" href="favicon.ico"></head><body><div id="application"></div></body></html>',
+            templateContent: '<!DOCTYPE html><html><head><title>UTOR PassCard</title><link rel="shortcut icon" href="favicon.ico"></head><body><div id="application"></div></body></html>',
             inject: 'head',
         }),
         new ScriptExtHtmlPlugin({inline: [/.(js|css)$/]}),

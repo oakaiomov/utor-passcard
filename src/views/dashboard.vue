@@ -1,10 +1,10 @@
 <template>
 <div class="dashboard">
     <div class="logo"/>
-    <div class="header">Passcard</div>
+    <div class="header">PassCard</div>
     <div class="generate" @click="onGenerate">Generate New</div>
     <div class="recovery">
-        <div class="message">If you lost your passcard and have it's ID, you can recover an online copy here</div>
+        <div class="message">If you lost your PassCard and have it's ID, you can recover an online copy here</div>
         <div class="restore" @click="onRestore">Restore</div>
     </div>
 </div>
